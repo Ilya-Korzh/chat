@@ -1,0 +1,53 @@
+.container {
+  color: #0f7dc6;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+  width: 130px;
+  margin: 10px;
+}
+
+.wrapperRegisterCard {
+  border-color: #0f7dc6;
+  box-shadow: 0 0 5px 5px rgba(29, 162, 216, 0.2);
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.wrapperInput {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+
+}
+
+.wrapperError {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.error {
+  margin: 20px 0;
+}
+
+.wrapperButton {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+

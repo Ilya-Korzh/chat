@@ -1,0 +1,26 @@
+.imgPreview{
+  width: 100px;
+  height: 100px;
+}
+.imgsWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  padding: 0 10px;
+
+}
+.imgWrapper{
+  position: relative;
+}
+.CloseIcon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: grey;
+
+}
+.CloseIcon:hover{
+  color: red;
+}

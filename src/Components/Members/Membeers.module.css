@@ -1,0 +1,12 @@
+.wrapperMembers {
+  color: #0f7dc6;
+  padding: 0 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+  width: 90%;
+}
+.wrapperMemberLogin{
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,110 @@
+.AsidePanel {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0f263d;
+  min-width: 300px;
+  width: 300px;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.AsidePanel::-webkit-scrollbar {
+  width: 4px;
+}
+
+.AsidePanel::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.AsidePanel::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.AsidePanel::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.personNick {
+  color: #1a7e95;
+  text-decoration: none;
+  padding: 10px 0;
+  margin: 10px 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 5px 5px rgba(29, 162, 216, 0.2);
+  border-radius: 5px;
+  width: 200px;
+}
+.avatar{
+  margin: 0 10px;
+}
+.active {
+  color: #1a7e95;
+  text-decoration: none;
+  padding: 10px 0;
+  margin: 10px 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 0 5px 5px rgba(8, 232, 222, 0.5);
+  border-radius: 5px;
+  width: 200px;
+}
+
+.nickAndLastMessage {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.title{
+  align-self: center;
+  margin: 0 10px;
+}
+.login{
+  margin-top: 10px;
+  align-self: center;
+}
+.lastMessage{
+  align-self: center;
+}
+.trashBasket{
+  margin: 0 10px;
+}
+.trashBasket:hover {
+  background-color: rgba(255, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 2px;
+}
+
+
+
+.StickyContainer {
+  position: sticky;
+  top: 0;
+  background-color: #0f263d;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.StickyContainerFooter{
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  align-items: center;
+  background-color: #0f263d;
+  width: 295px;
+  display: flex;
+  justify-content: center;
+}
+.AsidePanel > :nth-last-child(2) {
+ margin-bottom: 80px;
+}
