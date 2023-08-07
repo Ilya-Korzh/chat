@@ -19,30 +19,23 @@ export const AsidePanel = () => {
   const chats = useSelector((state) => state.chat);
   const payloadUserId = payload?.data?.UserFindOne?._id;
 
-
   useChatSocket();
-const navigate = useNavigate()
+  const navigate = useNavigate();
+
   useEffect(() => {
     (async () => {
-      console.log(payloadUserId);
-      console.log(stateUserId);
-      if ( payloadUserId !== stateUserId) {
+      if (payloadUserId !== stateUserId) {
         const user = await dispatch(actionPromise("promiseGetUserById", getUserById(stateUserId)));
         dispatch(addChats(user.data.UserFindOne.chats));
       }
-
     })();
   }, [payloadUserId]);
 
-
-
-
-
   const openCustomModal = () => {
-   navigate("/CreateChatPage")
+    navigate("/CreateChatPage");
 
   };
-   return (<div className={style.AsidePanel}>
+  return (<div className={style.AsidePanel}>
     {status === 'PENDING' || !status ? (<CircularProgress />) : (<>
       <div className={style.StickyContainer}>
         <Button
@@ -53,18 +46,11 @@ const navigate = useNavigate()
           Add chat
         </Button>
 
-
       </div>
 
-      {Object.keys(chats).length ? (
-        Object.keys(chats)
+      {Object.keys(chats).length ? (Object.keys(chats)
           .reverse()
-          .map(key =>
-            chats[key].members.length > 1 ? (
-              <ChatDescription key={key} chat={chats[key]} />
-            ) : null
-          )
-      ) : null}
+          .map(key => chats[key].members.length > 1 ? (<ChatDescription key={key} chat={chats[key]} />) : null)) : null}
 
       <div className={style.StickyContainerFooter}>
         <Exit />

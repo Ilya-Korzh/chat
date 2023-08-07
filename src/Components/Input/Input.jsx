@@ -4,16 +4,15 @@ const StyledTextField = styled(TextField)`
   label {
     color: #0f7dc6;
   }
-  margin-bottom: 20px;
+
 
   .MuiInputBase-input {
-    color: #0f7dc6; 
+    color: #0f7dc6;
   }
 `;
 
-export function Input({ placeHolder,keyPress, value, setValue, text }) {
-  return (
-    <StyledTextField
+export function Input({ placeHolder, keyPress, value, setValue, text,width }) {
+  return (<StyledTextField
       label={text}
       variant="outlined"
       value={value}
@@ -25,12 +24,11 @@ export function Input({ placeHolder,keyPress, value, setValue, text }) {
       size="small"
       placeholder={placeHolder}
       sx={{
+        width: `${width}%`,
         boxShadow: '0 0 5px 5px rgba(29, 162, 216, 0.2)',
-        mt: '10px',
         borderRadius: '5px',
       }}
-    />
-  );
+    />);
 }
 
 export default Input;

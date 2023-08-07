@@ -7,6 +7,8 @@ import { useState } from 'react';
 import style from "./CreateChat.module.css";
 import { Members } from '../Members/Members';
 import { useNavigate } from 'react-router-dom';
+import PersonAddAltIcon from '@mui/icons-material/PersonAddAlt';
+import { type } from '@testing-library/user-event/dist/type';
 
 export const CreateChat = () => {
   const navigate = useNavigate();
@@ -21,10 +23,10 @@ export const CreateChat = () => {
   const statusChatLogin = useSelector(state => state?.promise?.promiseCreateChat?.status);
 
   const handleKeyPress = async (event) => {
-    if (event.key === 'Enter') {
+
+    if (event.key === 'Enter' || event.type==='click') {
 
       setError(true);
-
       const stateGetUserByLogin = await dispatch(actionPromise("promiseGetUserByLogin", getUserByLogin(login)));
       const id = stateGetUserByLogin?.data?.UserFindOne?._id;
       if (id) {
@@ -55,26 +57,32 @@ export const CreateChat = () => {
   };
 
   return (<>
-    {statusChatLogin !== "PENDING" ? < Input
-      keyPress={handleKeyPress}
-      value={login}
-      setValue={setLogin}
-      text={"Login"}
-      placeHolder={"Write login and press enter"}
-    /> : <CircularProgress />}
-    < Input
-      keyPress={handleKeyPress}
-      value={title}
-      setValue={setTitle}
-      text={"Title"}
-      placeHolder={"Write title if you want"}
-    />
+    <div className={style.wrapperInputs}>
+      < Input
+        width={"100"}
+        value={title}
+        setValue={setTitle}
+        text={"Title"}
+        placeHolder={"Write title if you want"}
+      />
+      {statusChatLogin !== "PENDING" ? <div className={style.wrapperInputAddMember}>
+        < Input
+          width={"100"}
+          keyPress={handleKeyPress}
+          value={login}
+          setValue={setLogin}
+          text={"Login"}
+          placeHolder={"Write login and press enter "}
+        />
+        <PersonAddAltIcon
+          className={style.addMemberIcon}
+        onClick={handleKeyPress}
+        />
+      </div> : <CircularProgress />}
+    </div>
+
     {Object.keys(members).length > 0 ? <Members members={members} setMembers={setMembers} /> : null}
 
-    <Button
-      sx={{ width: "90%" }}
-      onClick={createChatButton} variant="contained"
-    >Create chat</Button>
     {!dataUserLogin && error && statusUserLogin === 'FULFILLED' && (<>
       <span className={style.spanError}>Such user doesn't exist</span>
       <Button
@@ -82,6 +90,14 @@ export const CreateChat = () => {
         onClick={showError} variant="contained"
       >Close</Button>
     </>)}
+
+    <Button
+      sx={{
+        width: "90%", marginTop: "20px"
+      }}
+      onClick={createChatButton} variant="contained"
+    >Create chat</Button>
+
   </>);
 };
 

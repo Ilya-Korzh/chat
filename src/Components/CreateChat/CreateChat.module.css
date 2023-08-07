@@ -2,3 +2,21 @@
   padding: 10px 0;
   color: #0f7dc6;
 }
+.wrapperInputs{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+.wrapperInputAddMember {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.addMemberIcon{cursor: pointer;
+color: rgba(30, 170, 220, 0.6)}
+
+.addMemberIcon:hover{cursor: pointer;
+  color: rgba(8, 232, 222, 1)}

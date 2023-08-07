@@ -85,7 +85,7 @@ export const AddImg = ({ setArrImg }) => {
                 fontSize="large"
                 onDragEnter={dragEnterHandler}
                 onDragLeave={dragLeaveHandler}
-                onDragOver={dragEnterHandler}
+                onDragOver={dragEnterHandler} className={style.labelFile}
               />
               <input
                 accept=".jpg,.jpeg,.png,.pdf"

@@ -1,9 +1,15 @@
 
-
 .inputFile {
   display: none;
+  cursor: pointer;
 }
-.picture{
+
+.picture {
   width: 100px;
   height: 100px;
+}
+
+.labelFile {
+
+  cursor: pointer;
 }
