@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0db19f9-b3f8-4655-b398-8cd16fe01d8f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Components/AddImg/AddImg.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AddImg/AddImg.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/AddImg/AddImg.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AddImg/AddImg.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/AsidePanel/AsidePanel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AsidePanel/AsidePanel.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/CreateChat/CreateChat.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CreateChat/CreateChat.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/CreateChat/CreateChat.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CreateChat/CreateChat.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Input/Input.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Input/Input.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Members/Membeers.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Members/Membeers.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/ChatPage/ChatPage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/ChatPage/ChatPage.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/ChatPage/CreateChatPage/CreateChatPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/CreateChatPage/CreateChatPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,21 +27,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.3.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.3.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Korzh\Desktop\Korzh-Ilya-HW\chat\src\Pages" />
@@ -94,6 +86,10 @@
       <workItem from="1691339659341" duration="5739000" />
       <workItem from="1691351794594" duration="875000" />
       <workItem from="1691397552282" duration="7198000" />
+      <workItem from="1694601889317" duration="399000" />
+      <workItem from="1695201815889" duration="1172000" />
+      <workItem from="1695206730139" duration="897000" />
+      <workItem from="1695220264005" duration="645000" />
     </task>
     <servers />
   </component>
